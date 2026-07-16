@@ -1,97 +1,173 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
 
-    .container {
-        height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas:
-            "card-1 card-1 card-2 card-3"
-            "card-4 card-5 card-5 card-3"
-            "card-4 card-6 card-6 card-3"
-            "card-7 card-8 card-9 card-10";
-        gap: 10px 10px;
-        padding: 20px;
 
-    }
+/* ========================================= */
 
-    .container>div {
-        padding: 24px;
-        border-bottom: 5px solid #f97316;
-        border-radius: 14px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-        transition: all 0.3s ease;
-        font-size: 18px;
-        line-height: 1.7;
-        font-weight: 500;
-    }
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "card-1 card-1 card-2 card-3"
+        "card-4 card-5 card-5 card-3"
+        "card-4 card-6 card-6 card-3"
+        "card-7 card-8 card-9 card-10";
+    gap: 10px 10px;
+    padding: 20px;
+}
 
-    .container>div:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
-    }
+.container>div {
+    padding: 24px;
+    border-bottom: 5px solid #f97316;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    font-size: 18px;
+    line-height: 1.7;
+    font-weight: 500;
+}
 
-    .card-1 {
-        grid-area: card-1;
-        background: #ffffff;
-        color: #1f2937;
-    }
+.container>div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+}
 
-    .card-2 {
-        grid-area: card-2;
-        background: #dbeafe;
-        color: #1e3a8a;
-    }
+.card-1 {
+    grid-area: card-1;
+    background: #ffffff;
+    color: #1f2937;
+}
 
-    .card-3 {
-        grid-area: card-3;
-        background: #1e293b;
-        color: #f8fafc;
-    }
+.card-2 {
+    grid-area: card-2;
+    background: #dbeafe;
+    color: #1e3a8a;
+}
 
-    .card-4 {
-        grid-area: card-4;
-        background: #fef3c7;
-        color: #78350f;
-    }
+.card-3 {
+    grid-area: card-3;
+    background: #1e293b;
+    color: #f8fafc;
+}
 
-    .card-5 {
-        grid-area: card-5;
-        background: #0f766e;
-        color: #f8fafc;
-    }
+.card-4 {
+    grid-area: card-4;
+    background: #fef3c7;
+    color: #78350f;
+}
 
-    .card-6 {
-        grid-area: card-6;
-        background: #ede9fe;
-        color: #5b21b6;
-    }
+.card-5 {
+    grid-area: card-5;
+    background: #0f766e;
+    color: #f8fafc;
+}
 
-    .card-7 {
-        grid-area: card-7;
-        background: #dcfce7;
-        color: #166534;
-    }
+.card-6 {
+    grid-area: card-6;
+    background: #ede9fe;
+    color: #5b21b6;
+}
 
-    .card-8 {
-        grid-area: card-8;
-        background: #334155;
-        color: #f8fafc;
-    }
+.card-7 {
+    grid-area: card-7;
+    background: #dcfce7;
+    color: #166534;
+}
 
-    .card-9 {
-        grid-area: card-9;
-        background: #ffedd5;
-        color: #9a3412;
-    }
+.card-8 {
+    grid-area: card-8;
+    background: #334155;
+    color: #f8fafc;
+}
 
-    .card-10 {
-        grid-area: card-10;
-        background: #cffafe;
-        color: #155e75;
-    }
+.card-9 {
+    grid-area: card-9;
+    background: #ffedd5;
+    color: #9a3412;
+}
+
+.card-10 {
+    grid-area: card-10;
+    background: #cffafe;
+    color: #155e75;
+}
+
+/* ========================================= */
+/* ========================================= */
+/* ========================================= */
+/* ========================================= */
+/* ========================================= */
+/* ========================================= */
+
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 200px repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "g8 g8 g8 g8 g8 g8"
+        "g2 g2 g2 g2 g3 g3"
+        "g4 g5 g5 g5 g5 g5"
+        "g6 g5 g5 g5 g5 g5"
+        "g7 g5 g5 g5 g5 g5"
+        "g1 g1 g1 g1 g1 g1";
+}
+
+.grid div {
+    background-color: #1414da99;
+    color: #fff;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.one {
+    grid-area: g1;
+}
+
+.two {
+    grid-area: g2;
+}
+
+.three {
+    grid-area: g3;
+}
+
+.four {
+    grid-area: g4;
+}
+
+.five {
+    grid-area: g5;
+}
+
+.six {
+    grid-area: g6;
+}
+
+.seven {
+    grid-area: g7;
+}
+
+.eight {
+    grid-area: g8;
+}
+
+
+
+hr {
+    border: none;
+    height: 8px;
+    margin: 60px 0;
+    background: linear-gradient(to right, transparent, #3b82f6, transparent);
+}
